@@ -1,0 +1,47 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 60px;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.logo{
+  font-size: 24px;
+}
+.nav-links {
+  display: flex;
+  gap: 32px;
+  list-style: none;
+}
+
+.nav-item {
+  cursor: pointer;
+  transition: color 0.3s;
+  font-weight: 500;
+}
+
+.nav-item:hover {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.cta-button {
+  padding: 10px 24px;
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #1e40af;
+  
+  transform: translateY(-2px);
+}

@@ -1,21 +1,22 @@
-function Navbar(){
-    return(
-        <nav className="bg-gray-800 text-white p-4 flex justify-between items-center">
-            <div className="text-3xl">
-                Navbar
-            </div>
-            <div>
-                <ul className="flex justify-between">
-                    <li>Home</li>
-                    <li>Services</li>
-                    <li>About us</li>
-                </ul>
-            </div>
-            <div>
-                <h2>Get started</h2>
-            </div>
-        </nav>
-    )
+import React from "react";
+import "./Navbar.css";
+import { Link } from "react-router-dom";
+
+function Navbar() {
+  return (
+    <nav className="navbar">
+      <div className="logo">MedVideoConsult</div>
+       <ul className="nav-links">
+        <li className="nav-item">Home</li>
+        <li className="nav-item">Services</li>
+        <li className="nav-item">About Us</li>
+      </ul>
+      <Link to="/login">
+       <button className="cta-button" >Login / Register</button>
+      </Link>
+      
+    </nav>
+  );
 }
 
 export default Navbar;

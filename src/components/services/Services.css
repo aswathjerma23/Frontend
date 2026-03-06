@@ -1,0 +1,32 @@
+.services-section {
+  padding: 80px 20px;
+  text-align: center;
+}
+
+.services-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.services-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: #2563eb;
+  color: white;
+  padding: 60px 40px;
+  border-radius: 16px;
+  font-size: 1.2rem;
+  font-weight: 500;
+  transition: transform 0.3s, background-color 0.3s;
+  cursor: pointer;
+}
+
+.service-card:hover {
+  transform: translateY(-10px);
+  background-color: #1e40af;
+}
